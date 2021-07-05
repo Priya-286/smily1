@@ -6,34 +6,34 @@ div{
 div.firstlayer{
     background-color:red;
     border:2px solid black;
-    height: 100vh;
+    min-height: 100vh;
 }
 div.secondlayer{
     background-color:blue;
     border:2px solid white;
-    height: calc(100vh - 60px);
+    min-height: calc(100vh - 60px);
 }
 div.thirdlayer{
     background-color:white;
     border:2px solid green;
-    height: calc(100vh - 120px);
+    min-height: calc(100vh - 120px);
 }
 div.fourthlayer{
     background-color:green;
     border:2px solid red;
-    height: calc(100vh - 180px);
+    min-height: calc(100vh - 180px);
 }
 div.fifthlayer{
     background-color:red;
     border:2px solid purple;   
-    height: calc(100vh - 240px);
+    min-height: calc(100vh - 240px);
 }
 div.sixthlayer{
     background-color:white;
     color:green;
     padding:30px;
     border:2px solid purple;
-    height: calc(100vh - 300px);
+    min-height: calc(100vh - 300px);
 }
 span.text_span
 {
@@ -42,4 +42,25 @@ span.text_span
 span.emoji{
     color:black;
     font-size:40px;
+}
+
+@media screen and (min-width:990px){
+    div.firstlayer{
+        height: 100vh;
+    }
+    div.secondlayer{
+        height: calc(100vh - 60px);
+    }
+    div.thirdlayer{
+        height: calc(100vh - 120px);
+    }
+    div.fourthlayer{
+        height: calc(100vh - 180px);
+    }
+    div.fifthlayer{
+        height: calc(100vh - 240px);
+    }
+    div.sixthlayer{
+        height: calc(100vh - 300px);
+    }
 }
