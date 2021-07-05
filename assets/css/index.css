@@ -2,31 +2,38 @@ div{
     color:white;
     padding:30px;
 }
+
 div.firstlayer{
     background-color:red;
     border:2px solid black;
+    height: 100vh;
 }
 div.secondlayer{
     background-color:blue;
     border:2px solid white;
+    height: calc(100vh - 60px);
 }
 div.thirdlayer{
     background-color:white;
     border:2px solid green;
+    height: calc(100vh - 120px);
 }
 div.fourthlayer{
     background-color:green;
     border:2px solid red;
+    height: calc(100vh - 180px);
 }
 div.fifthlayer{
     background-color:red;
     border:2px solid purple;   
+    height: calc(100vh - 240px);
 }
 div.sixthlayer{
-background-color:white;
-color:green;
-padding:30px;
-border:2px solid purple;
+    background-color:white;
+    color:green;
+    padding:30px;
+    border:2px solid purple;
+    height: calc(100vh - 300px);
 }
 span.text_span
 {

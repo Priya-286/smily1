@@ -1,40 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Welcome Page </title>
-    <link href="Sub_files/CSS/index.css" rel="stylesheet">
-</head>
-<body>
-    <div class="firstlayer">
-    <div class="secondlayer" >
-    <div class="thirdlayer" >
-    <div class="fourthlayer">
-    <div class="fifthlayer">
-    <img src="Sub_files/photos/r2.jpg" style="float:right;height:370px;width:280px;"></img>
-    <div class="sixthlayer">
-        <left>
-            <h1 style="font-family:Algerian;">&#128578;Hii.....<span style="color:blue;">  &#9995;</span></h1>
-            <p style="color:pink;font-size:30px;font-family:Chiller;">
-                <b>&#10024;Welcome.....<br>
-                <span class="text_span"> This is the small thing created by me for u</span>
-                <span class="emoji">&#127873;&#9786;</span>
-                </b>
-            </p>
-        </left> 
-        <center>
-            <p style="font-family:Lucida Calligraphy;"><br>
-            <a href="Sub_files/2nd page.html">Please click here<br>&#128070;</a>
-            </p>
-        </center>   
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Welcome Page </title>
+        
+        <meta name="description" content="Happy Birthday Rahul Sir !!!">
+        <link rel="icon" type="image/png" href="assets/photos/r4.jpg"   >
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">    </head>
+        <link href="assets/css/index.css" rel="stylesheet">
+    <body>
+        <div class="firstlayer">
+            <div class="secondlayer rounded" >
+                <div class="thirdlayer rounded" >
+                    <div class="fourthlayer rounded">
+                        <div class="fifthlayer rounded">
+                            <div class="sixthlayer rounded">
+                                <div class="container-fluid m-0 p-0">
+                                    <div class="row m-0 p-0">
+                                        <div class="col-lg-6 col-md-12 text-center">
+                                            <h1 style="font-family:Algerian !important;"><span style="color:blue !important;">&#128578;Hii.....  &#9995;</span></h1>
+                                            <p style="color:pink;font-size:30px;font-family:Chiller;">
+                                                <b>&#10024;Welcome.....<br>
+                                                    <span class="text_span"> This is the small thing created by me for u</span>
+                                                    <span class="emoji">&#127873;&#9786;</span>
+                                                </b>
+                                            </p>
+                                            <div class="col-12 d-sm-none d-md-none d-lg-block d-xl-block">
+                                                <a class="btn btn-white w-100" href="assets/2nd page.html">Please click here<br>&#128070;</a>
+                                            </div>
+                                        </div> 
+                                        <div class="col-lg-6 col-md-12">
+                                            <img src="assets/photos/r2.jpg" class="img-fluid rounded" alt="">
+                                            <!-- <img src="assets/photos/r2.jpg" style="float:right;height: 100%;"></img>                                     -->
+                                        </div>
+                                        <div class="col-12 d-lg-none d-xl-none">
+                                            <a class="btn btn-white w-100" href="assets/2nd page.html">Please click here<br>&#128070;</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            // Find the right method, call on correct element
+            function launchFullScreen(element) {
+                if(element.requestFullScreen) {
+                    element.requestFullScreen();
+                } else if(element.mozRequestFullScreen) {
+                    element.mozRequestFullScreen();
+                } else if(element.webkitRequestFullScreen) {
+                    element.webkitRequestFullScreen();
+                }
+            }
+
+            addEventListener("click", function() {
+                var
+                    el = document.documentElement
+                    , rfs =
+                        el.requestFullScreen
+                        || el.webkitRequestFullScreen
+                        || el.mozRequestFullScreen
+                ;
+                rfs.call(el);
+            });
+            
+            // Launch fullscreen for browsers that support it!
+            launchFullScreen(document.documentElement); // the whole page
+        </script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
 </html> 
                         
                         
